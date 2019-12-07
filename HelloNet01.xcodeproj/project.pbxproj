@@ -14,6 +14,7 @@
 		BA4FCE72239B406500D71606 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA4FCE71239B406500D71606 /* Assets.xcassets */; };
 		BA4FCE75239B406500D71606 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA4FCE73239B406500D71606 /* LaunchScreen.storyboard */; };
 		BA4FCE81239B422800D71606 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4FCE80239B422800D71606 /* Reachability.m */; };
+		BA4FCE83239B477E00D71606 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4FCE82239B477E00D71606 /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BA4FCE7C239B40B000D71606 /* HelloNet01-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloNet01-Bridging-Header.h"; sourceTree = "<group>"; };
 		BA4FCE7F239B422800D71606 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		BA4FCE80239B422800D71606 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		BA4FCE82239B477E00D71606 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				BA4FCE7C239B40B000D71606 /* HelloNet01-Bridging-Header.h */,
 				BA4FCE7F239B422800D71606 /* Reachability.h */,
 				BA4FCE80239B422800D71606 /* Reachability.m */,
+				BA4FCE82239B477E00D71606 /* Utility.swift */,
 			);
 			path = HelloNet01;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA4FCE83239B477E00D71606 /* Utility.swift in Sources */,
 				BA4FCE6D239B406400D71606 /* ViewController.swift in Sources */,
 				BA4FCE69239B406400D71606 /* AppDelegate.swift in Sources */,
 				BA4FCE81239B422800D71606 /* Reachability.m in Sources */,

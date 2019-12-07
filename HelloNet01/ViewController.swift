@@ -10,18 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var statuslabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         print(networkStatus())
     }
 
-    func networkStatus() -> Bool {
-        if Reachability(hostName: "www.apple.com")?.currentReachabilityStatus().rawValue == 0{
-            return false
+
+    
+    @IBAction func networkStatus(_ sender: Any) {
+        if networkStatus() == true{
+            statuslabel.text = "有網路"
         }else{
-            return true
+            statuslabel.text = "沒網路"
         }
     }
-
+    
 }
 
