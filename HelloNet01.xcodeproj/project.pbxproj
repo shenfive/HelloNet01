@@ -13,6 +13,7 @@
 		BA4FCE70239B406400D71606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA4FCE6E239B406400D71606 /* Main.storyboard */; };
 		BA4FCE72239B406500D71606 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA4FCE71239B406500D71606 /* Assets.xcassets */; };
 		BA4FCE75239B406500D71606 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA4FCE73239B406500D71606 /* LaunchScreen.storyboard */; };
+		BA4FCE81239B422800D71606 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4FCE80239B422800D71606 /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		BA4FCE71239B406500D71606 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA4FCE74239B406500D71606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA4FCE76239B406500D71606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA4FCE7C239B40B000D71606 /* HelloNet01-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloNet01-Bridging-Header.h"; sourceTree = "<group>"; };
+		BA4FCE7F239B422800D71606 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		BA4FCE80239B422800D71606 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,9 @@
 				BA4FCE71239B406500D71606 /* Assets.xcassets */,
 				BA4FCE73239B406500D71606 /* LaunchScreen.storyboard */,
 				BA4FCE76239B406500D71606 /* Info.plist */,
+				BA4FCE7C239B40B000D71606 /* HelloNet01-Bridging-Header.h */,
+				BA4FCE7F239B422800D71606 /* Reachability.h */,
+				BA4FCE80239B422800D71606 /* Reachability.m */,
 			);
 			path = HelloNet01;
 			sourceTree = "<group>";
@@ -99,6 +106,7 @@
 				TargetAttributes = {
 					BA4FCE64239B406400D71606 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -140,6 +148,7 @@
 			files = (
 				BA4FCE6D239B406400D71606 /* ViewController.swift in Sources */,
 				BA4FCE69239B406400D71606 /* AppDelegate.swift in Sources */,
+				BA4FCE81239B422800D71606 /* Reachability.m in Sources */,
 				BA4FCE6B239B406400D71606 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XSVW22JPST;
 				INFOPLIST_FILE = HelloNet01/Info.plist;
@@ -293,6 +303,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = idev.sjw.HelloNet01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloNet01/HelloNet01-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,6 +314,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XSVW22JPST;
 				INFOPLIST_FILE = HelloNet01/Info.plist;
@@ -311,6 +324,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = idev.sjw.HelloNet01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloNet01/HelloNet01-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
