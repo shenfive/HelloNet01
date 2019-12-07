@@ -7,24 +7,29 @@
 //
 
 import UIKit
+import WebKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var statuslabel: UILabel!
+    @IBOutlet weak var wkWebview: WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print(networkStatus())
-    }
-
-
-    
-    @IBAction func networkStatus(_ sender: Any) {
-        if networkStatus() == true{
-            statuslabel.text = "有網路"
-        }else{
-            statuslabel.text = "沒網路"
+        
+        let urlString = "https://www.ichih.com/"
+        if let url = URL(string: urlString){
+            let urlrequest = URLRequest(url: url)
+            wkWebview.load(urlrequest)
         }
+        
+        
+        
+        
     }
+
+
     
+
 }
 
